@@ -1,0 +1,22 @@
+{
+  "name": "wlhs-hackclub-site",
+  "version": "1.0.0",
+  "description": "New site for WLHS Hack Club!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewStanciu/wlhs-hackclub-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatthewStanciu/wlhs-hackclub-site/issues"
+  },
+  "homepage": "https://github.com/MatthewStanciu/wlhs-hackclub-site#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
