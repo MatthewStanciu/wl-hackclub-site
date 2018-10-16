@@ -17,6 +17,26 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+form, button {
+    display:table;
+    margin:auto;
+  }
+  input {
+    border-radius: 25px;
+    border: 2px solid #191414;
+    padding: 15px;
+    width: 300px;
+    height: 15px;
+  }
+  button {
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border: 2px solid #191414;
+    width: 125px;
+    height: 30px;
+    background-color: white;
+  }
 
 @font-face {
     font-family: 'Averta';
