@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -41,10 +42,10 @@ app.post('/signup', (req, res) => {
 });
 
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + '/views/index.html');
+  response.sendFile(__dirname + '/index.html');
 });
 app.get('/added', (request, response) => {
-  response.sendFile(__dirname + '/views/added.html');
+  response.sendFile(__dirname + '/added.html');
 })
 
 http.listen(3000);
