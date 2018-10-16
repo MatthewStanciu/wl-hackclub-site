@@ -9,12 +9,13 @@
     <body>
         <div id="typewriter"></div>
 
-        <script src="./dist/core.js"></script>
+        <script src="https://unpkg.com/typewriter-effect@2.4.6/dist/core.js"></script>
         <script type="text/javascript">
-            var typewriter = new Typewriter("typewriter", {loop:true});
+            var typewriter = new Typewriter("#typewriter", {loop:true});
 
-            typewriter.typeString('A place for <strong>makers.</strong>')
-            .pauseFor(3000)
+            typewriter.typeString('A place for ')
+            .typeString('<strong>makers.</strong>')
+            .pauseFor(2500)
             .deleteChars(7)
             .typeString('artists.')
             .pauseFor(2500)
@@ -34,7 +35,7 @@
             .typeString('mathematicians')
             .pauseFor(2500)
             .deleteChars(14)
-            .typeString('aaaa')
+            .start();
         </script>
     </body>
 </html>
