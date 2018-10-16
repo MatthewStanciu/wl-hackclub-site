@@ -7,6 +7,16 @@ html {
     text-align: center;
     color: white;
 }
+h2 {
+    color: white;
+    text-align: center;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 @font-face {
     font-family: 'Averta';
