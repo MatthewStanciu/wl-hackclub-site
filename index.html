@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./style.css">
         <title>WLHS Hack Club</title>
     </head>
     <body>
@@ -11,7 +12,7 @@
 
         <script src="https://unpkg.com/typewriter-effect@2.4.6/dist/core.js"></script>
         <script type="text/javascript">
-            var typewriter = new Typewriter("#typewriter", {loop:true});
+            var typewriter = new Typewriter("#typewriter", {loop:false});
 
             typewriter.typeString('A place for ')
             .typeString('<strong>makers.</strong>')
@@ -37,7 +38,9 @@
             .deleteChars(15)
             .typeString('dreamers.')
             .pauseFor(2500)
-            .deleteChars(9)
+            .deleteAll()
+            .typeString('A place for ')
+            .typeString('<strong>makers.</strong>')
             .start();
         </script>
     </body>

@@ -1,0 +1,12 @@
+html {
+    font-family: 'Averta';
+}
+#typewriter {
+    font-size: 75px;
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Averta';
+    src: url('http://hackclub.com/fonts/averta-regular.woff');
+}
