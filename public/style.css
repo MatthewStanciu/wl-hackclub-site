@@ -7,7 +7,10 @@ html {
     text-align: center;
     color: white;
 }
-h2 {
+#tw {
+  height: 150px;
+}
+h2, p {
     color: white;
     text-align: center;
 }

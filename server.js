@@ -5,17 +5,16 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 var Airtable = require('airtable');
 var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base('appF6Zkc4Ro45xess');
-require('dotenv').config()
 
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/signup', (req, res) => {
-  if (req.body.signup === "") return res.redirect('/');
+  if (req.body.name === "") return res.redirect('/');
   console.log(req.body.name + " signed up");
   
-  base('Signup').create({"Name": req.body.signup}, function(err, record) {
+  base('Signup').create({"Name": req.body.name}, function(err, record) {
     if (err) { console.error(err); return; }
     console.log("New Airtable record created: " + record.getId());
   });
@@ -32,7 +31,7 @@ app.post('/signup', (req, res) => {
     from: 'mattbstanciu@gmail.com',
     to: 'mattbstanciu@gmail.com',
     subject: 'New Hack Club signup!',
-    text: req.body.signup
+    text: req.body.name
   };
   transporter.sendMail(mailOptions, function(err, data) {
     if (err) return console.log(err);
